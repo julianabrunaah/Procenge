@@ -1,0 +1,33 @@
+<div class="form-container">
+    <h2>Curso - Incluir</h2>
+
+    <form>
+        <div class="input">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" [(ngModel)]="cursos.nome">    
+        </div>
+        <div class="input">
+            <label for="instructor">Instrutor:</label>
+            <input type="text" id="instructor" [(ngModel)]="cursos.instrutor">    
+        </div>
+        <div class="input">
+            <label for="place">local:</label>
+            <input type="text" id="place" [(ngModel)]="cursos.local">    
+        </div>
+        
+        <div class="inputs">
+            <div class="input">
+                <label for="time">Carga Horária:</label>
+                <input type="number" id="time" [(ngModel)]="cursos.cargaHoraria">   
+            </div>
+            <div class="input">
+                <label for="date">Data Início:</label>
+                <input type="date" id="date" [(ngModel)]="cursos.dataInicio">      
+            </div>             
+        </div>      
+    </form>
+    <div class="buttons">
+        <button (click)="createCourse()">Incluir</button>
+        <a routerLink="/">Voltar</a>
+    </div>
+</div>
